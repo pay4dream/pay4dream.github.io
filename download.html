@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pay4Dream 1.0.0 修正版发布状态</title>
+    <title>下载 Pay4Dream 1.0.1</title>
     <meta
       name="description"
-      content="Pay4Dream 1.0.0 修正版发布暂停。首批正式包已撤下，修正版完成四渠道验收后恢复下载。"
+      content="下载 Pay4Dream 1.0.1 Public macOS / Windows 版。无需邀请码，配置自己的模型 API Key 即可使用。"
     />
     <link rel="icon" type="image/png" href="./assets/pay4dream-icon.png" />
     <link rel="stylesheet" href="./assets/site.css" />
@@ -33,10 +33,10 @@
       <section class="download-hero" aria-labelledby="download-title">
         <div class="section-inner download-hero-inner">
           <div>
-            <p class="eyebrow">Pay4Dream 1.0.0</p>
-            <h1 id="download-title">修正版发布暂停</h1>
+            <p class="eyebrow">Pay4Dream 1.0.1</p>
+            <h1 id="download-title">下载 Public 版</h1>
             <p>
-              首批正式包未默认启用完整的 3D Storyboard / SceneBoard 链路，已经撤下。请不要继续分发或安装此前下载的 1.0.0 文件。
+              macOS 与 Windows 双平台已更新。Public 版无需邀请码或激活码，配置自己的模型 API Key 后即可开始。
             </p>
           </div>
           <img src="./assets/pay4dream-icon.png" alt="" class="download-icon" />
@@ -46,9 +46,9 @@
       <section class="download-section" id="downloads" aria-labelledby="download-options-title">
         <div class="section-inner">
           <div class="section-heading reveal">
-            <p class="section-kicker">当前状态</p>
-            <h2 id="download-options-title">macOS / Windows 下载均已暂停。</h2>
-            <p data-platform-message>修正版通过四渠道功能验收后，这里会同时恢复两个平台。</p>
+            <p class="section-kicker">当前下载</p>
+            <h2 id="download-options-title">选择你的系统。</h2>
+            <p data-platform-message>以下链接只提供不含内部凭证的 Public 安装包。</p>
           </div>
 
           <div class="download-grid">
@@ -61,14 +61,15 @@
               <dl class="download-meta">
                 <div>
                   <dt>大小</dt>
-                  <dd>已撤下</dd>
+                  <dd>约 32.1 MB</dd>
                 </div>
                 <div>
                   <dt>文件类型</dt>
                   <dd>DMG</dd>
                 </div>
               </dl>
-              <span class="button button-primary button-block" aria-disabled="true">macOS 下载暂停</span>
+              <p class="file-hash"><code>Pay4Dream-1.0.1-external-mac.dmg</code><br />SHA256 <code>133f2333819fe1ae9e8385b80dd72f38a4226e5b316b4d3244e734227d01865b</code></p>
+              <a class="button button-primary button-block" href="https://github.com/pay4dream/p4d-release/releases/download/v1.0.1/Pay4Dream-1.0.1-external-mac.dmg">下载 macOS 版</a>
             </article>
 
             <article class="download-card reveal" data-platform-card="windows">
@@ -80,14 +81,15 @@
               <dl class="download-meta">
                 <div>
                   <dt>大小</dt>
-                  <dd>已撤下</dd>
+                  <dd>约 19.4 MB</dd>
                 </div>
                 <div>
                   <dt>文件类型</dt>
                   <dd>EXE</dd>
                 </div>
               </dl>
-              <span class="button button-primary button-block" aria-disabled="true">Windows 下载暂停</span>
+              <p class="file-hash"><code>Pay4Dream-1.0.1-external-win-x64-setup.exe</code><br />SHA256 <code>499ef1af77f456026104458ac4fc65be4d3cf5ac44d790819ef999bff2b799c6</code></p>
+              <a class="button button-primary button-block" href="https://github.com/pay4dream/p4d-release/releases/download/v1.0.1/Pay4Dream-1.0.1-external-win-x64-setup.exe">下载 Windows 版</a>
             </article>
           </div>
         </div>
@@ -96,17 +98,27 @@
       <section class="download-section" aria-labelledby="highlights-title">
         <div class="section-inner">
           <div class="section-heading reveal">
-            <p class="section-kicker">T0 产品方向</p>
+            <p class="section-kicker">重点更新</p>
             <h2 id="highlights-title">3D 分镜先把镜头说清楚。</h2>
           </div>
+          <figure class="release-video reveal">
+            <video controls preload="metadata" poster="./assets/sceneboard-preview.png">
+              <source src="./assets/p4d-mobile-capability-demo-zh-en-v3.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Android 镜头捕捉器技术预览的模拟器演示，配有中英字幕。真实设备硬件验收仍在进行。</figcaption>
+          </figure>
           <div class="install-grid">
             <article class="install-card reveal">
               <h3>统一 SceneBoard</h3>
-              <p>修正版目标是集中管理角色、道具、姿态、摄影机、焦距、关键帧、运动轨迹和时间线预演。</p>
+              <p>集中管理角色、道具、姿态、摄影机、焦距、关键帧、运动轨迹和时间线预演。</p>
             </article>
             <article class="install-card reveal">
-              <h3>移动端路线图</h3>
-              <p>镜头运动轨迹联动计划 Android 优先；iOS 上线时间未定。两者均未包含在当前 1.0.0 中。</p>
+              <h3>3D 交互修复</h3>
+              <p>单个模型和组合道具都能可靠旋转并保存；左键平移、<code>Shift + 左键</code> 环绕，右键只打开场景菜单。</p>
+            </article>
+            <article class="install-card reveal">
+              <h3>移动端镜头捕捉</h3>
+              <p>Android 技术预览支持陀螺仪 / 双摇杆运镜、3D 场景编辑和关键帧动画。真实设备硬件验收仍在进行；iOS 上线时间未定。</p>
             </article>
           </div>
         </div>
@@ -115,19 +127,17 @@
       <section class="install-section" id="install" aria-labelledby="install-title">
         <div class="section-inner">
           <div class="section-heading reveal">
-            <p class="section-kicker">恢复条件</p>
-            <h2 id="install-title">四个正式渠道必须通过同一条 3D 分镜验收路径。</h2>
+            <p class="section-kicker">安装说明</p>
+            <h2 id="install-title">系统可能提示未验证开发者。</h2>
           </div>
           <div class="install-grid">
             <article class="install-card reveal">
-              <h3>macOS Internal / Public</h3>
-              <p>必须在安装后直接看到 3D 分镜入口，并完成角色、摄影机、时间线与提交绑定检查。</p>
-              <p>恢复下载后仍会如实标注：macOS 为 ad-hoc 签名且未经过 Apple notarization。</p>
+              <h3>macOS</h3>
+              <p>安装包为 ad-hoc 签名，未经过 Apple notarization。首次打开请右键 App 选择「打开」；仍被拦截时按 Manual 的 Gatekeeper 路径处理。</p>
             </article>
             <article class="install-card reveal">
-              <h3>Windows Internal / Public</h3>
-              <p>必须完成原生安装、启动和 3D 分镜 UI 骨干路径检查，不能只验证安装包可以解压。</p>
-              <p>恢复下载后仍会如实标注：Windows 安装包未签名。</p>
+              <h3>Windows</h3>
+              <p>安装包未签名。SmartScreen 出现时先确认文件名来自本页，再点「更多信息」与「仍要运行」。本版尚未完成真实 Windows 机器上的安装启动验收。</p>
             </article>
           </div>
         </div>
@@ -137,13 +147,13 @@
         <div class="section-inner trial-layout">
           <div class="reveal">
             <p class="section-kicker">开始前准备</p>
-            <h2 id="trial-title">你需要邀请码，也需要自己的模型密钥。</h2>
+            <h2 id="trial-title">无需邀请码；你需要自己的模型密钥。</h2>
             <p>
               Pay4Dream 可连接多种常用模型服务。密钥保存在本机，请确认对应账号有可用额度。
             </p>
           </div>
           <div class="trial-actions reveal">
-            <a class="button button-primary" href="https://github.com/pay4dream/p4d-release/releases/tag/v1.0.0">查看发布记录</a>
+            <a class="button button-primary" href="https://github.com/pay4dream/p4d-release/releases/tag/v1.0.1">查看发布记录</a>
             <a class="button button-ghost" href="https://pay4dream.github.io/p4d-release/manual.html">查看试用指南</a>
           </div>
         </div>
@@ -160,7 +170,7 @@
           <a href="./index.html">首页</a>
           <a href="./privacy.html">隐私政策</a>
           <a href="./support.html">技术支持</a>
-          <a href="https://github.com/pay4dream/p4d-release/releases/tag/v1.0.0">版本记录</a>
+          <a href="https://github.com/pay4dream/p4d-release/releases/tag/v1.0.1">版本记录</a>
           <a href="mailto:pay4dream.app@gmail.com">反馈</a>
         </nav>
       </div>

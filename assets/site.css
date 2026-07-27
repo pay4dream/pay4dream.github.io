@@ -507,6 +507,7 @@ summary:focus-visible {
 }
 
 .product-frame img,
+.product-frame video,
 .detail-image img {
   width: 100%;
   aspect-ratio: 3 / 2;
@@ -514,6 +515,32 @@ summary:focus-visible {
   border-radius: 8px;
   border: 1px solid rgba(255, 250, 243, 0.18);
   box-shadow: var(--shadow);
+}
+
+.product-frame video {
+  display: block;
+  margin-top: 16px;
+  background: #000;
+}
+
+.release-video {
+  max-width: 960px;
+  margin: 28px auto 40px;
+}
+
+.release-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.release-video figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .product-frame figcaption {
@@ -726,6 +753,13 @@ summary:focus-visible {
 .file-name {
   margin: 14px 0 24px;
   color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.file-hash {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.55;
   overflow-wrap: anywhere;
 }
 
