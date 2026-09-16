@@ -528,7 +528,8 @@ summary:focus-visible {
   margin: 28px auto 40px;
 }
 
-.release-video video {
+.release-video video,
+.release-video img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
