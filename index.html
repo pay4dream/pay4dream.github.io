@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pay4Dream - AI 视频创作工作台</title>
+    <title>Pay4Dream 1.1.0 - AI 视频创作工作台</title>
     <meta
       name="description"
-      content="Pay4Dream 是面向创作者和小团队的 AI 视频创作工作台。1.0.4 已开放 3D 分镜，并提供无需邀请码的 Public macOS / Windows 版本。"
+      content="Pay4Dream 1.1.0 Public macOS 版已开放下载，支持自有 LibTV 账号文生视频、候选采用与剪辑导出。Windows 1.1.0 构建中，保留 1.0.4 历史下载。"
     />
-    <meta property="og:title" content="Pay4Dream - AI 视频创作工作台" />
+    <meta property="og:title" content="Pay4Dream 1.1.0 - AI 视频创作工作台" />
     <meta
       property="og:description"
-      content="3D 分镜把角色、道具、摄影机、运动轨迹和时间线放进同一导演工作台。Pay4Dream 1.0.4 已开放下载。"
+      content="从 LibTV 文生视频到候选预览、采用、剪辑与导出。1.1.0 Public macOS 已发布，Windows 1.1.0 构建中。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/product-workbench.png" />
+    <meta property="og:image" content="https://pay4dream.github.io/assets/product-workbench.png" />
+    <meta property="og:image:alt" content="Pay4Dream 历史版本创作工作台" />
+    <meta property="og:url" content="https://pay4dream.github.io/" />
+    <link rel="canonical" href="https://pay4dream.github.io/" />
     <link rel="icon" type="image/png" href="./assets/pay4dream-icon.png" />
     <link rel="stylesheet" href="./assets/site.css" />
   </head>
@@ -42,20 +45,20 @@
           <p class="eyebrow">AI 视频创作工作台</p>
           <h1 id="hero-title">Pay4Dream</h1>
           <p class="hero-lede">
-            把脚本、参考素材、镜头调度、prompt、生成任务和剪辑放进同一个本地项目。1.0.4 用 3D 分镜把角色、道具、机位与镜头运动放到生成之前先确认。
+            把脚本、参考素材、镜头调度、prompt、生成任务和剪辑放进同一个本地项目。1.1.0 接入自有 LibTV 账号的文生视频，让生成、候选预览、采用与导出接得更顺。
           </p>
           <div class="hero-actions" aria-label="主要操作">
-            <a class="button button-primary" href="./download.html">下载 1.0.4</a>
+            <a class="button button-primary" href="./download.html">下载 1.1.0</a>
             <a class="button button-ghost" href="#workflow">了解工作方式</a>
           </div>
           <dl class="hero-facts" aria-label="版本摘要">
             <div>
-              <dt>当前版本</dt>
-              <dd>1.0.4</dd>
+              <dt>macOS Public</dt>
+              <dd>1.1.0</dd>
             </div>
             <div>
-              <dt>桌面平台</dt>
-              <dd>macOS / Windows</dd>
+              <dt>Windows Public</dt>
+              <dd>1.0.4 · 1.1.0 构建中</dd>
             </div>
             <div>
               <dt>使用方式</dt>
@@ -97,7 +100,7 @@
             <article class="workflow-card reveal">
               <span class="card-index">03</span>
               <h3>控制镜头</h3>
-            <p>在统一 SceneBoard 里管理角色、场景道具、姿态、摄影机、焦距、关键帧和运动轨迹，再决定静态或动态参考路线。</p>
+              <p>在统一 SceneBoard 里管理角色占位、场景道具、摄影机、焦距、关键帧和运动轨迹，再决定静态或动态参考路线。Public 版支持基础场景编辑，不提供骨骼姿态或关节手柄编辑。</p>
             </article>
           </div>
         </div>
@@ -106,7 +109,7 @@
       <section class="product-shot-section" aria-labelledby="shot-title">
         <div class="section-inner shot-grid">
           <div class="shot-copy reveal">
-            <p class="section-kicker">1.0.4 重点能力</p>
+            <p class="section-kicker">3D 分镜 · 1.0.4 历史界面</p>
             <h2 id="shot-title">先在 3D 分镜里把镜头走一遍。</h2>
             <p>
               角色、道具、摄影机、运动轨迹和时间线在同一个 SceneBoard 里汇合。先确认构图、动作和运镜，再把导演意图带入视频生成。
@@ -115,12 +118,12 @@
           <figure class="product-frame reveal">
             <img
               src="./assets/sceneboard-preview.png"
-              alt="Pay4Dream 3D 分镜，包含角色、道具、摄影机、运动轨迹和时间线"
+              alt="Pay4Dream Public 1.0.4 历史 3D 分镜界面，包含角色占位、道具、摄影机和时间线"
               width="1195"
               height="768"
               loading="lazy"
             />
-            <figcaption>Public 1.0.4 原生安装包中的 3D 分镜：程序化人偶保留角色可见、选择和基础场景编辑交互。</figcaption>
+            <figcaption>Public 1.0.4 历史界面：程序化角色占位可见、可选，支持基础场景编辑。</figcaption>
           </figure>
         </div>
       </section>
@@ -152,34 +155,34 @@
         <div class="section-inner release-layout">
           <div class="release-panel reveal">
             <p class="section-kicker">更新亮点</p>
-            <h2 id="release-title">Pay4Dream 1.0.4</h2>
-            <p class="release-date">1.0.4 · macOS / Windows Public · 发布于 2026 年 9 月 16 日</p>
-            <a class="button button-primary" href="./download.html">下载 1.0.4</a>
+            <h2 id="release-title">Pay4Dream 1.1.0</h2>
+            <p class="release-date">2026 年 9 月 25 日 · macOS Public 已发布 · Windows 1.1.0 构建中</p>
+            <a class="button button-primary" href="./download.html">下载 1.1.0</a>
           </div>
           <div class="release-notes reveal">
             <article>
-              <h3>统一创作工作台</h3>
-              <p>视频、图片、3D 分镜、剪辑、任务和设置采用一致的视觉层级与控件节奏。</p>
+              <h3>自有 LibTV 账号</h3>
+              <p>自行安装官方 CLI 并登录，检查可用模型后主动启用。支持官方 Seedance 2.5 文生视频路径，账号、会员与密钥不随包提供。</p>
             </article>
             <article>
-              <h3>候选流程更连贯</h3>
-              <p>优化候选预览与采用、失败恢复和跨镜头状态刷新，让已有工作更容易继续。</p>
+              <h3>付费生成先确认</h3>
+              <p>LibTV 默认关闭。每次生成先确认内容与费用，再提交到自己的账号；同一项目连续生成不再因默认节点重名而中断。</p>
             </article>
             <article>
-              <h3>剪辑与窄窗口优化</h3>
-              <p>剪辑片段、顶栏与 3D 视图在有限空间中保持清楚，常用操作更容易定位。</p>
+              <h3>预览后明确采用</h3>
+              <p>生成结果下载并导入为候选，完整预览后再明确采用，继续剪辑、导出；重开项目可继续已采用的工作。</p>
             </article>
             <article>
-              <h3>静帧缩略图</h3>
-              <p>本地视频缩略图以静帧呈现，改善浏览体验；主播放器的既有行为保持不变。</p>
+              <h3>已有任务继续恢复</h3>
+              <p>查询已有任务，继续下载或导入结果；恢复操作不会重新提交付费生成，失败原因也更容易定位。</p>
             </article>
             <article>
-              <h3>程序化 3D 人偶</h3>
-              <p>Public 构建使用程序化人偶保留场景可见、选择和基础编辑交互。</p>
+              <h3>Public 基础 3D</h3>
+              <p>使用程序化胶囊体作为角色占位，支持场景对象旋转与保存；不提供骨骼姿态或关节手柄编辑。</p>
             </article>
             <article>
-              <h3>Public 直接使用</h3>
-              <p>Public 版无需邀请码或激活码；配置自己的模型 API Key 后即可开始。</p>
+              <h3>保留已有剪辑</h3>
+              <p>保留已有配音与片段时长，改进剪辑恢复、撤销重做和错误展示。历史带水印素材不会自动变成无水印原片。</p>
             </article>
           </div>
         </div>
@@ -214,12 +217,12 @@
           </div>
           <div class="trust-grid">
             <article class="trust-card reveal">
-              <h3>使用自己的模型密钥</h3>
-              <p>你可以在应用里配置常用模型服务。密钥保存在本机，用来直接连接对应服务。</p>
+              <h3>使用自己的账号与密钥</h3>
+              <p>模型服务由你自行配置并承担费用。LibTV 使用自己的官方 CLI 登录；连接远端服务时，生成所需内容会发送给对应服务。</p>
             </article>
             <article class="trust-card reveal">
               <h3>无需邀请码</h3>
-              <p>Public 1.0.4 首次启动可直接进入应用；模型服务仍由用户配置自己的 API Key。</p>
+              <p>Public 1.1.0 首次启动可直接进入应用。LibTV 需主动启用并确认扣费；本次不包含 Dreamina 生成、Higgsfield 或新的移动端版本。</p>
             </article>
             <article class="trust-card reveal">
               <h3>只从这里下载</h3>
@@ -233,9 +236,9 @@
         <div class="section-inner final-inner">
           <div class="reveal">
             <p class="section-kicker">开始试用</p>
-            <h2 id="final-title">下载 1.0.4，把镜头先走清楚。</h2>
+            <h2 id="final-title">下载 1.1.0，把镜头先走清楚。</h2>
           </div>
-          <a class="button button-primary reveal" href="./download.html">下载 1.0.4</a>
+          <a class="button button-primary reveal" href="./download.html">下载 1.1.0</a>
         </div>
       </section>
     </main>
