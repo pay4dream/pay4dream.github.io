@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>下载 Pay4Dream 1.1.0 Public</title>
+    <title>下载 Pay4Dream 1.1.2 Public</title>
     <meta
       name="description"
-      content="下载 Pay4Dream 1.1.0 Public macOS Apple Silicon / Windows x64 版，查看安装说明、文件大小与 SHA256。无需邀请码，使用自己的账号与密钥。"
+      content="下载 Pay4Dream 1.1.2 Public macOS Apple Silicon / Windows x64 版，查看安装说明、文件大小与 SHA256。新增第五工作区 KV 创作、一键动态 KV 与 Agent CLI。"
     />
-    <meta property="og:title" content="下载 Pay4Dream 1.1.0 Public" />
-    <meta property="og:description" content="macOS / Windows Public 1.1.0 已发布。无需邀请码，使用自己的模型账号与密钥；提供下载校验与安装说明。" />
+    <meta property="og:title" content="下载 Pay4Dream 1.1.2 Public" />
+    <meta property="og:description" content="macOS / Windows Public 1.1.2 已发布。五个并列工作区，支持一键动态 KV、Agent CLI 与桌面 Agent API；提供下载校验与安装说明。" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://pay4dream.github.io/assets/product-workbench.png" />
-    <meta property="og:image:alt" content="Pay4Dream 历史版本创作工作台" />
+    <meta property="og:image:alt" content="Pay4Dream 创作工作台" />
     <meta property="og:url" content="https://pay4dream.github.io/download.html" />
     <link rel="canonical" href="https://pay4dream.github.io/download.html" />
     <link rel="icon" type="image/png" href="./assets/pay4dream-icon.png" />
@@ -24,11 +24,11 @@
         <img src="./assets/pay4dream-icon.png" alt="" />
         <span>Pay4Dream</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" aria-label="主导航" data-nav>
+      <nav id="site-nav" class="site-nav" aria-label="主导航" data-nav>
         <a href="./index.html#workflow">工作方式</a>
         <a href="./index.html#release">更新亮点</a>
         <a href="#install">安装说明</a>
@@ -40,10 +40,10 @@
       <section class="download-hero" aria-labelledby="download-title">
         <div class="section-inner download-hero-inner">
           <div>
-            <p class="eyebrow">Pay4Dream 1.1.0 · 2026 年 9 月 25 日</p>
+            <p class="eyebrow">Pay4Dream 1.1.2 · 2026 年 10 月 23 日</p>
             <h1 id="download-title">下载 Public 版</h1>
             <p>
-              macOS 与 Windows Public 1.1.0 已开放下载。无需邀请码或激活码，使用自己的模型账号与密钥；历史版本仍可从页脚的发布记录查看。
+              macOS 与 Windows Public 1.1.2 已开放下载。图片、3D 分镜、KV 创作、视频生成与剪辑五个工作区并列，支持一键动态 KV、Agent CLI 与桌面 Agent API。
             </p>
           </div>
           <img src="./assets/pay4dream-icon.png" alt="" class="download-icon" />
@@ -55,7 +55,7 @@
           <div class="section-heading reveal">
             <p class="section-kicker">当前下载</p>
             <h2 id="download-options-title">选择你的系统。</h2>
-            <p data-platform-message>以下链接只提供不含内部凭证的 Public 安装包。</p>
+            <p data-platform-message>以下链接只提供 Public 安装包。</p>
           </div>
 
           <div class="download-grid">
@@ -64,19 +64,19 @@
                 <span class="platform-name">macOS</span>
                 <span class="recommend-badge" aria-hidden="true">推荐</span>
               </div>
-              <p class="file-name">1.1.0 Public · Apple Silicon（arm64，M1 及更新芯片）。</p>
+              <p class="file-name">1.1.2 Public · Apple Silicon（arm64，M1 及更新芯片）。</p>
               <dl class="download-meta">
                 <div>
                   <dt>大小</dt>
-                  <dd>34,073,979 字节</dd>
+                  <dd>37,051,095 字节</dd>
                 </div>
                 <div>
                   <dt>文件类型</dt>
                   <dd>DMG</dd>
                 </div>
               </dl>
-              <p class="file-hash"><code>Pay4Dream-1.1.0-external-mac.dmg</code><br />SHA256 <code>69823ad9565815f3476c7342d5a195772daabbdd3edd958cb164b33effb0ec5e</code></p>
-              <a class="button button-primary button-block" href="https://github.com/pay4dream/p4d-release/releases/download/v1.1.0/Pay4Dream-1.1.0-external-mac.dmg">下载 macOS 1.1.0</a>
+              <p class="file-hash"><code>Pay4Dream-1.1.2-external-mac.dmg</code><br />SHA256 <code>efdb294c8cdbab10945a754e77d49c467f97602c02b37b0c336d6ff39d645832</code></p>
+              <a class="button button-primary button-block" href="https://github.com/pay4dream/p4d-release/releases/download/v1.1.2/Pay4Dream-1.1.2-external-mac.dmg">下载 macOS 1.1.2</a>
             </article>
 
             <article class="download-card reveal" data-platform-card="windows">
@@ -84,19 +84,19 @@
                 <span class="platform-name">Windows</span>
                 <span class="recommend-badge" aria-hidden="true">推荐</span>
               </div>
-              <p class="file-name">1.1.0 Public · Windows 10 / 11 x64。</p>
+              <p class="file-name">1.1.2 Public · Windows 10 / 11 x64。</p>
               <dl class="download-meta">
                 <div>
                   <dt>大小</dt>
-                  <dd>20,221,286 字节</dd>
+                  <dd>21,836,311 字节</dd>
                 </div>
                 <div>
                   <dt>文件类型</dt>
                   <dd>EXE</dd>
                 </div>
               </dl>
-              <p class="file-hash"><code>Pay4Dream-1.1.0-external-win-x64-setup.exe</code><br />SHA256 <code>6680110eecec689fb45ded95f335fb05edaf571c3f72dab7032496370858a37c</code></p>
-              <a class="button button-primary button-block" href="https://github.com/pay4dream/p4d-release/releases/download/v1.1.0/Pay4Dream-1.1.0-external-win-x64-setup.exe">下载 Windows 1.1.0</a>
+              <p class="file-hash"><code>Pay4Dream-1.1.2-external-win-x64-setup.exe</code><br />SHA256 <code>991e91bbab6e4746167307d5b041a570ecf9bf03f2f27e07d2d6f1c435e9f6fe</code></p>
+              <a class="button button-primary button-block" href="https://github.com/pay4dream/p4d-release/releases/download/v1.1.2/Pay4Dream-1.1.2-external-win-x64-setup.exe">下载 Windows 1.1.2</a>
             </article>
           </div>
         </div>
@@ -105,25 +105,29 @@
       <section class="download-section" aria-labelledby="highlights-title">
         <div class="section-inner">
           <div class="section-heading reveal">
-            <p class="section-kicker">1.1.0 重点更新</p>
-            <h2 id="highlights-title">从生成候选到继续制作。</h2>
+            <p class="section-kicker">1.1.2 重点更新</p>
+            <h2 id="highlights-title">第五工作区，让静态 KV 和动态参考留在同一张卡片。</h2>
           </div>
           <figure class="release-video reveal">
-            <img src="./assets/sceneboard-preview.png" alt="Pay4Dream Public 1.0.4 历史 3D 分镜界面，程序化角色占位可见和可选" width="1195" height="768" loading="lazy" />
-            <figcaption>Public 1.0.4 历史界面：程序化角色占位可见、可选，支持基础场景编辑。</figcaption>
+            <img src="./assets/sceneboard-preview.png" alt="Pay4Dream 历史 3D 分镜界面，程序化角色占位可见和可选" width="1195" height="768" loading="lazy" />
+            <figcaption>历史界面示意：程序化角色占位可见、可选，支持基础场景编辑。</figcaption>
           </figure>
           <div class="install-grid">
             <article class="install-card reveal">
-              <h3>LibTV 文生视频</h3>
-              <p>使用自己的账号，主动启用并确认内容与费用后，走官方 Seedance 2.5 文生视频路径。同一项目连续生成与已有任务查询、下载、导入恢复更连贯；恢复不会重新提交付费生成。</p>
+              <h3>KV 创作 · 第五工作区</h3>
+              <p>与图片生成、3D 分镜、视频生成、剪辑并列。组合角色、场景、构图和风格参考，完成完整静态 KV，不再把主视觉拆成零散素材。</p>
             </article>
             <article class="install-card reveal">
-              <h3>Public 基础 3D</h3>
-              <p>Public 版使用程序化胶囊体作为角色占位，支持场景对象旋转与保存；不提供骨骼姿态或关节手柄编辑。</p>
+              <h3>一键动态 KV</h3>
+              <p>选中已生成的静态 KV，一键把它作为首帧生成短动态参考。提交前确认内容与费用，未知结果不自动重投，静态原图与动态结果保留在同一张卡片。</p>
             </article>
             <article class="install-card reveal">
-              <h3>预览、采用与导出</h3>
-              <p>结果先进入候选，预览后明确采用，再继续剪辑与导出，重开项目继续工作。保留已有配音与片段时长，改进剪辑恢复和撤销重做。</p>
+              <h3>Agent CLI 与桌面 Agent API</h3>
+              <p>安装包内提供服务同版本的 <code>p4d-cli</code> 与 <code>p4d</code> 别名。Agent 只连接本机正在运行的桌面会话，执行已注册命令；付费、破坏性和敏感操作仍需明确确认。</p>
+            </article>
+            <article class="install-card reveal">
+              <h3>3D 构图与制作链</h3>
+              <p>3D 分镜机位可带入 KV 参考；同时改进项目切换、Canvas 节点操作、剪辑恢复与工程文件展示。Public 版不提供骨骼姿态或关节手柄编辑。</p>
             </article>
           </div>
         </div>
@@ -138,11 +142,11 @@
           <div class="install-grid">
             <article class="install-card reveal">
               <h3>macOS</h3>
-              <p>1.1.0 安装包为 ad-hoc 签名，尚未经过 Apple 公证（notarization）。先核对本页文件名与 SHA256；确认来源后可右键 App 选择「打开」，仍被拦截请查阅试用指南。不要关闭系统安全保护。</p>
+              <p>1.1.2 安装包为 ad-hoc 签名，尚未经过 Apple 公证（notarization）。先核对本页文件名与 SHA256；确认来源后可右键 App 选择「打开」，仍被拦截请查阅试用指南。不要关闭系统安全保护。</p>
             </article>
             <article class="install-card reveal">
               <h3>Windows</h3>
-              <p>1.1.0 安装包未签名。SmartScreen 出现时先核对文件名与 SHA256，确认来源后再决定是否继续安装。本版未完成真实 Windows 机器上的安装启动验收，请保留原项目备份。</p>
+              <p>1.1.2 安装包未签名，且本版尚未完成真实 Windows 机器上的安装启动验收。SmartScreen 出现时先核对文件名与 SHA256，确认来源后再决定是否继续安装，并保留原项目备份。</p>
             </article>
           </div>
         </div>
@@ -152,14 +156,14 @@
         <div class="section-inner trial-layout">
           <div class="reveal">
             <p class="section-kicker">开始前准备</p>
-            <h2 id="trial-title">无需邀请码；使用自己的账号与密钥。</h2>
+            <h2 id="trial-title">无需邀请码；模型服务由你自行配置。</h2>
             <p>
-              LibTV 默认关闭，需自行安装官方 CLI、登录账号、检查可用模型并主动启用；付费生成前须确认费用。账号、会员与 API Key 不随包提供，请确认可用额度。连接远端服务时，生成所需内容会发送给对应服务。
+              模型服务需由你自行配置并确认可用额度；付费生成前须确认内容与费用。连接远端服务时，生成所需内容会发送给对应服务。Agent 只连接本机桌面会话，可视化与 KV 草稿仍留在软件端。
             </p>
-            <p>本次不包含 Dreamina 生成、Higgsfield 或新的移动端版本。历史带水印素材不会自动变成无水印原片。</p>
+            <p>本次不包含新的移动端版本。历史带水印素材不会自动变成无水印原片。</p>
           </div>
           <div class="trial-actions reveal">
-            <a class="button button-primary" href="https://github.com/pay4dream/p4d-release/releases/tag/v1.1.0">查看 1.1.0 发布记录</a>
+            <a class="button button-primary" href="https://github.com/pay4dream/p4d-release/releases/tag/v1.1.2">查看 1.1.2 发布记录</a>
             <a class="button button-ghost" href="https://pay4dream.github.io/p4d-release/manual.html">查看试用指南</a>
           </div>
         </div>
@@ -176,7 +180,8 @@
           <a href="./index.html">首页</a>
           <a href="./privacy.html">隐私政策</a>
           <a href="./support.html">技术支持</a>
-          <a href="https://github.com/pay4dream/p4d-release/releases/tag/v1.1.0">1.1.0 版本记录</a>
+          <a href="https://github.com/pay4dream/p4d-release/releases/tag/v1.1.2">1.1.2 版本记录</a>
+          <a href="https://github.com/pay4dream/p4d-release/releases/tag/v1.1.0">1.1.0 历史记录</a>
           <a href="https://github.com/pay4dream/p4d-release/releases/tag/v1.0.4">1.0.4 历史记录</a>
           <a href="mailto:pay4dream.app@gmail.com">反馈</a>
         </nav>

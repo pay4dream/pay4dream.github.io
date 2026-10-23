@@ -14,18 +14,34 @@
   window.addEventListener("scroll", updateHeader, { passive: true });
 
   if (nav && navToggle) {
-    navToggle.addEventListener("click", function () {
-      var isOpen = nav.classList.toggle("is-open");
+    function setNavOpen(isOpen, returnFocus) {
+      nav.classList.toggle("is-open", isOpen);
       document.body.classList.toggle("nav-open", isOpen);
       navToggle.setAttribute("aria-expanded", String(isOpen));
+      navToggle.setAttribute("aria-label", isOpen ? "关闭导航" : "打开导航");
+      if (!isOpen && returnFocus) navToggle.focus();
+    }
+
+    navToggle.addEventListener("click", function () {
+      setNavOpen(!nav.classList.contains("is-open"), false);
     });
 
     nav.addEventListener("click", function (event) {
       if (event.target && event.target.tagName === "A") {
-        nav.classList.remove("is-open");
-        document.body.classList.remove("nav-open");
-        navToggle.setAttribute("aria-expanded", "false");
+        setNavOpen(false, false);
       }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && nav.classList.contains("is-open")) {
+        setNavOpen(false, true);
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!nav.classList.contains("is-open")) return;
+      if (nav.contains(event.target) || navToggle.contains(event.target)) return;
+      setNavOpen(false, false);
     });
   }
 

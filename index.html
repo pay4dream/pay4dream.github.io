@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pay4Dream 1.1.0 - AI 视频创作工作台</title>
+    <title>Pay4Dream 1.1.2 - AI 创作工作台</title>
     <meta
       name="description"
-      content="Pay4Dream 1.1.0 Public macOS / Windows 版已开放下载，支持自有 LibTV 账号文生视频、候选采用与剪辑导出。无需邀请码，使用自己的账号与密钥。"
+      content="Pay4Dream 1.1.2 Public macOS / Windows 版已开放下载，覆盖图片、3D 分镜、KV 创作、视频生成与剪辑，支持一键动态 KV、Agent CLI 与桌面 Agent API。无需邀请码，使用自己的模型服务账号。"
     />
-    <meta property="og:title" content="Pay4Dream 1.1.0 - AI 视频创作工作台" />
+    <meta property="og:title" content="Pay4Dream 1.1.2 - AI 创作工作台" />
     <meta
       property="og:description"
-      content="从 LibTV 文生视频到候选预览、采用、剪辑与导出。1.1.0 Public macOS / Windows 已开放下载。"
+      content="从图片、3D 分镜、KV 创作到视频生成与剪辑。1.1.2 Public macOS / Windows 已开放下载。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://pay4dream.github.io/assets/product-workbench.png" />
-    <meta property="og:image:alt" content="Pay4Dream 历史版本创作工作台" />
+    <meta property="og:image:alt" content="Pay4Dream 创作工作台" />
     <meta property="og:url" content="https://pay4dream.github.io/" />
     <link rel="canonical" href="https://pay4dream.github.io/" />
     <link rel="icon" type="image/png" href="./assets/pay4dream-icon.png" />
@@ -27,11 +27,11 @@
         <img src="./assets/pay4dream-icon.png" alt="" />
         <span>Pay4Dream</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" aria-label="主导航" data-nav>
+      <nav id="site-nav" class="site-nav" aria-label="主导航" data-nav>
         <a href="#workflow">工作方式</a>
         <a href="#release">更新亮点</a>
         <a href="#trust">使用说明</a>
@@ -42,27 +42,27 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">AI 视频创作工作台</p>
+          <p class="eyebrow">AI 视觉创作工作台</p>
           <h1 id="hero-title">Pay4Dream</h1>
           <p class="hero-lede">
-            把脚本、参考素材、镜头调度、prompt、生成任务和剪辑放进同一个本地项目。1.1.0 接入自有 LibTV 账号的文生视频，让生成、候选预览、采用与导出接得更顺。
+            把图片、3D 分镜、KV、视频生成与剪辑放进同一个本地项目。1.1.2 新增与四项能力并列的第五工作区「KV 创作」，并带来一键动态 KV、Agent CLI 与桌面 Agent API。
           </p>
           <div class="hero-actions" aria-label="主要操作">
-            <a class="button button-primary" href="./download.html">下载 1.1.0</a>
+            <a class="button button-primary" href="./download.html">下载 1.1.2</a>
             <a class="button button-ghost" href="#workflow">了解工作方式</a>
           </div>
           <dl class="hero-facts" aria-label="版本摘要">
             <div>
               <dt>macOS Public</dt>
-              <dd>1.1.0</dd>
+              <dd>1.1.2</dd>
             </div>
             <div>
               <dt>Windows Public</dt>
-              <dd>1.1.0</dd>
+              <dd>1.1.2</dd>
             </div>
             <div>
-              <dt>使用方式</dt>
-              <dd>无需邀请码</dd>
+              <dt>工作区</dt>
+              <dd>5 个并列入口</dd>
             </div>
           </dl>
         </div>
@@ -72,10 +72,10 @@
         <div class="section-inner intro-grid">
           <div>
             <p class="section-kicker">为什么需要它</p>
-            <h2>别让创作散在聊天记录和文件夹里。</h2>
+            <h2>五个工作区，接住同一套创作上下文。</h2>
           </div>
           <p>
-            Pay4Dream 用一个本地工作台承接脚本、素材、镜头设计、prompt、生成任务、轨道和导出记录。项目可以反复修改和继续制作，不再散落在多个网页、聊天记录和文件夹里。
+            Pay4Dream 用一个本地工作台承接图片生成、3D 分镜、KV 创作、视频生成与剪辑。参考、镜头、任务、结果和导出记录都留在同一个项目里，可以反复修改和继续制作，不再散落在多个网页、聊天记录和文件夹里。
           </p>
         </div>
       </section>
@@ -84,23 +84,33 @@
         <div class="section-inner">
           <div class="section-heading reveal">
             <p class="section-kicker">工作方式</p>
-            <h2 id="workflow-title">从创意草稿到最终片段，每一步都能接得上。</h2>
+            <h2 id="workflow-title">图片、3D 分镜、KV、视频与剪辑，五个工作区并列。</h2>
           </div>
           <div class="workflow-grid">
             <article class="workflow-card reveal">
               <span class="card-index">01</span>
-              <h3>写出方向</h3>
-              <p>描述主题、风格、时长和受众，先形成脚本与分镜骨架，再一步步确认。</p>
+              <h3>图片生成</h3>
+              <p>生成、编辑通用图片与角色、场景素材，结果直接进入项目资产库，继续供下游镜头和 KV 使用。</p>
             </article>
             <article class="workflow-card reveal">
               <span class="card-index">02</span>
-              <h3>组织资产</h3>
-              <p>把角色、场景、物品、参考图、参考视频和音频放进项目资产库，导入、拖入、生成和一键改图都有归属。</p>
+              <h3>3D 分镜</h3>
+              <p>在 SceneBoard 里摆放角色占位、场景与摄影机，先确认构图、动作和运镜，再把机位带入 KV 或视频生成。</p>
             </article>
             <article class="workflow-card reveal">
               <span class="card-index">03</span>
-              <h3>控制镜头</h3>
-              <p>在统一 SceneBoard 里管理角色占位、场景道具、摄影机、焦距、关键帧和运动轨迹，再决定静态或动态参考路线。Public 版支持基础场景编辑，不提供骨骼姿态或关节手柄编辑。</p>
+              <h3>KV 创作 · 第五工作区</h3>
+              <p>组合角色、场景、构图与风格参考，得到完整静态 KV；已生成图像可一键转为动态 KV，并保留原图、任务上下文和改稿链。</p>
+            </article>
+            <article class="workflow-card reveal">
+              <span class="card-index">04</span>
+              <h3>视频生成</h3>
+              <p>按镜头意图生成视频候选，结果先预览、再明确采用，继续进入剪辑；已有任务可查询、下载或导入恢复。</p>
+            </article>
+            <article class="workflow-card reveal">
+              <span class="card-index">05</span>
+              <h3>剪辑</h3>
+              <p>把图片、动态 KV 与视频片段组织成片，调整时长与配音，预览后导出，并保留项目内可继续修改的制作记录。</p>
             </article>
           </div>
         </div>
@@ -109,7 +119,7 @@
       <section class="product-shot-section" aria-labelledby="shot-title">
         <div class="section-inner shot-grid">
           <div class="shot-copy reveal">
-            <p class="section-kicker">3D 分镜 · 1.0.4 历史界面</p>
+            <p class="section-kicker">3D 分镜 · 历史界面示意</p>
             <h2 id="shot-title">先在 3D 分镜里把镜头走一遍。</h2>
             <p>
               角色、道具、摄影机、运动轨迹和时间线在同一个 SceneBoard 里汇合。先确认构图、动作和运镜，再把导演意图带入视频生成。
@@ -118,12 +128,12 @@
           <figure class="product-frame reveal">
             <img
               src="./assets/sceneboard-preview.png"
-              alt="Pay4Dream Public 1.0.4 历史 3D 分镜界面，包含角色占位、道具、摄影机和时间线"
+              alt="Pay4Dream 历史 3D 分镜界面，包含角色占位、道具、摄影机和时间线"
               width="1195"
               height="768"
               loading="lazy"
             />
-            <figcaption>Public 1.0.4 历史界面：程序化角色占位可见、可选，支持基础场景编辑。</figcaption>
+            <figcaption>历史界面示意：程序化角色占位可见、可选，支持基础场景编辑。</figcaption>
           </figure>
         </div>
       </section>
@@ -155,34 +165,34 @@
         <div class="section-inner release-layout">
           <div class="release-panel reveal">
             <p class="section-kicker">更新亮点</p>
-            <h2 id="release-title">Pay4Dream 1.1.0</h2>
-            <p class="release-date">2026 年 9 月 25 日 · macOS / Windows Public 1.1.0 已发布</p>
-            <a class="button button-primary" href="./download.html">下载 1.1.0</a>
+            <h2 id="release-title">Pay4Dream 1.1.2</h2>
+            <p class="release-date">2026 年 10 月 23 日 · macOS / Windows Public 1.1.2 已发布</p>
+            <a class="button button-primary" href="./download.html">下载 1.1.2</a>
           </div>
           <div class="release-notes reveal">
             <article>
-              <h3>自有 LibTV 账号</h3>
-              <p>自行安装官方 CLI 并登录，检查可用模型后主动启用。支持官方 Seedance 2.5 文生视频路径，账号、会员与密钥不随包提供。</p>
+              <h3>第五工作区：KV 创作</h3>
+              <p>与图片生成、3D 分镜、视频生成、剪辑并列。面向完整主视觉参考，不再把 KV 拆成图库里的单张素材或另一套独立项目。</p>
             </article>
             <article>
-              <h3>付费生成先确认</h3>
-              <p>LibTV 默认关闭。每次生成先确认内容与费用，再提交到自己的账号；同一项目连续生成不再因默认节点重名而中断。</p>
+              <h3>完整静态 KV</h3>
+              <p>角色、场景、构图与风格参考各有用途，可选外部参考、自动构图或 3D 分镜机位。上一稿的参考可继续复用，再逐步换人、换景或换构图。</p>
             </article>
             <article>
-              <h3>预览后明确采用</h3>
-              <p>生成结果下载并导入为候选，完整预览后再明确采用，继续剪辑、导出；重开项目可继续已采用的工作。</p>
+              <h3>一键动态 KV</h3>
+              <p>选中已生成的静态 KV，一键把它作为首帧生成短动态参考。提交前显示内容与费用确认，未知结果不自动重投，静态原图和动态结果留在同一张卡片。</p>
             </article>
             <article>
-              <h3>已有任务继续恢复</h3>
-              <p>查询已有任务，继续下载或导入结果；恢复操作不会重新提交付费生成，失败原因也更容易定位。</p>
+              <h3>Agent CLI 与桌面 Agent API</h3>
+              <p>安装包内提供服务同版本的 <code>p4d-cli</code> 与 <code>p4d</code> 别名。Agent 只连接本机正在运行的桌面会话，执行已注册命令；付费、破坏性和敏感操作仍需明确确认。</p>
             </article>
             <article>
-              <h3>Public 基础 3D</h3>
-              <p>使用程序化胶囊体作为角色占位，支持场景对象旋转与保存；不提供骨骼姿态或关节手柄编辑。</p>
+              <h3>3D 构图衔接</h3>
+              <p>把 3D 分镜里的机位与构图带入 KV 创作，在静态与动态参考之间反复比较。Public 版仍使用程序化角色占位，不提供骨骼姿态或关节手柄编辑。</p>
             </article>
             <article>
-              <h3>保留已有剪辑</h3>
-              <p>保留已有配音与片段时长，改进剪辑恢复、撤销重做和错误展示。历史带水印素材不会自动变成无水印原片。</p>
+              <h3>制作链稳定性</h3>
+              <p>改进项目切换、Canvas 节点操作、剪辑恢复与工程文件展示。历史带水印素材不会自动变成无水印原片。</p>
             </article>
           </div>
         </div>
@@ -193,17 +203,17 @@
           <figure class="detail-image reveal">
             <img
               src="./assets/product-generation-board.png"
-              alt="Pay4Dream Public 1.0.4 图库中的项目素材和镜头参考"
+              alt="Pay4Dream 项目素材、镜头参考与生成结果"
               width="1440"
               height="960"
               loading="lazy"
             />
           </figure>
           <div class="detail-copy reveal">
-            <p class="section-kicker">可控性</p>
+            <p class="section-kicker">项目上下文</p>
             <h2>生成结果留在项目里，而不是散落在聊天记录里。</h2>
             <p>
-              每次生成都能落回资产库和任务状态，方便继续挑选、替换、反馈和剪辑。SceneBoard 和参考素材会随镜头继续带入下游制作。
+              图片、3D 构图、KV 与视频结果都落回项目资产和任务状态，方便继续挑选、替换、反馈和剪辑。SceneBoard、参考素材与 KV 改稿链会随项目继续带入下游制作。
             </p>
           </div>
         </div>
@@ -217,12 +227,12 @@
           </div>
           <div class="trust-grid">
             <article class="trust-card reveal">
-              <h3>使用自己的账号与密钥</h3>
-              <p>模型服务由你自行配置并承担费用。LibTV 使用自己的官方 CLI 登录；连接远端服务时，生成所需内容会发送给对应服务。</p>
+              <h3>使用自己的模型服务</h3>
+              <p>模型服务由你自行配置并承担费用。连接远端服务时，生成所需内容会发送给对应服务；请只使用你有权处理的素材。</p>
             </article>
             <article class="trust-card reveal">
               <h3>无需邀请码</h3>
-              <p>Public 1.1.0 首次启动可直接进入应用。LibTV 需主动启用并确认扣费；本次不包含 Dreamina 生成、Higgsfield 或新的移动端版本。</p>
+              <p>Public 1.1.2 首次启动可直接进入应用。付费生成前会明确确认；Agent 可视化与 KV 草稿仍留在软件端。本次不包含新的移动端版本。</p>
             </article>
             <article class="trust-card reveal">
               <h3>只从这里下载</h3>
@@ -236,9 +246,9 @@
         <div class="section-inner final-inner">
           <div class="reveal">
             <p class="section-kicker">开始试用</p>
-            <h2 id="final-title">下载 1.1.0，把镜头先走清楚。</h2>
+            <h2 id="final-title">下载 1.1.2，把静态主视觉和动态参考放在一起做。</h2>
           </div>
-          <a class="button button-primary reveal" href="./download.html">下载 1.1.0</a>
+          <a class="button button-primary reveal" href="./download.html">下载 1.1.2</a>
         </div>
       </section>
     </main>
